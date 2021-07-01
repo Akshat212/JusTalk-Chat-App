@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#e2f3f5">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@drawable/splash"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JusTalk"
+            android:textColor="@color/primtext"
+            android:fontFamily="@font/spartan_bold"
+            android:textSize="@dimen/_25sdp"
+            android:letterSpacing="0.02"
+            android:background="#e2f3f5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hhmmmmm... let's just talk."
+            android:textColor="@color/primtext"
+            android:fontFamily="@font/spartan_regular"
+            android:textSize="@dimen/_16sdp"
+            android:letterSpacing="0.02"
+            android:background="#e2f3f5"
+            />
+
+        <ProgressBar
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="#0e153a"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textColor="@color/primtext"
+            android:fontFamily="@font/spartan_regular"
+            android:textSize="@dimen/_12sdp"
+            android:letterSpacing="0.02"
+            android:background="#e2f3f5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Creator !=  Facebook)"
+            android:textColor="@color/primtext"
+            android:fontFamily="@font/spartan_regular"
+            android:textSize="@dimen/_12sdp"
+            android:letterSpacing="0.02"
+            android:background="#e2f3f5"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

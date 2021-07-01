@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "656769914365",
+    "project_id": "justalk-5d410",
+    "storage_bucket": "justalk-5d410.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656769914365:android:3090fb17a8516ac16a3594",
+        "android_client_info": {
+          "package_name": "com.example.justalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656769914365-s8ql0scu5brsp3aafm9mefrbunj4jp2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnOyZvI3EvTHhXbCtDbfSzLxJ84quVtq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656769914365-s8ql0scu5brsp3aafm9mefrbunj4jp2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

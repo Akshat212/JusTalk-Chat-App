@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#e2f3f5"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:background="#22d1ee">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primtext"
+            android:text="@string/app_name"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:fontFamily="@font/verdure"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/settings_btn"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/profile"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/log_out"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/logout3"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userRecyclerView"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+</RelativeLayout>

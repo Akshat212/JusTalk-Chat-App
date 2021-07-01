@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#e2f3f5">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerInParent="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <ImageView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_140sdp"
+            android:background="@drawable/happy"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primtext"
+            android:text="Hi! There\nWelcome Back"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:lineSpacingMultiplier="1"
+            android:letterSpacing="0.03"
+            android:fontFamily="@font/chicken"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="normal"/>
+
+        <LinearLayout
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/email_img"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/email"
+                />
+
+            <EditText
+
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:textColor="@color/primtext"
+                android:fontFamily="@font/spartan_regular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/password"
+                />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:inputType="textPassword"
+                android:textColor="@color/primtext"
+                android:fontFamily="@font/spartan_regular"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/signin_btn"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Sign In"
+            android:background="@drawable/signin_shape"
+            android:fontFamily="@font/spartan_bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/primtext"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm a new user. "
+            android:fontFamily="@font/spartan_regular"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/sectext"
+            />
+
+        <TextView
+            android:id="@+id/signup"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/primtext"
+            android:textSize="@dimen/_18sdp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

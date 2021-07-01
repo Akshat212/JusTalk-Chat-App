@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e2f3f5">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/receiver_image"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/avataaars" />
+
+    <TextView
+        android:id="@+id/receiver_message"
+        android:layout_toEndOf="@id/receiver_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm fine!"
+        android:padding="@dimen/_7sdp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_4sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/spartan_regular"
+        android:background="@drawable/receiver_message_shape"
+        />
+
+</RelativeLayout>

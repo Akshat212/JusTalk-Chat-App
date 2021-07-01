@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#e2f3f5">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_centerInParent="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primtext"
+            android:text="New Here Let's Talk!"
+            android:fontFamily="@font/chicken"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="normal"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/avataaars3"
+                app:civ_border_color="#FF000000"/>
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="top|right"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/camera"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/name"
+                />
+
+            <EditText
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:hint="Username"
+                android:textColor="@color/primtext"
+                android:fontFamily="@font/spartan_regular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/email"
+                />
+
+            <EditText
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:textColor="@color/primtext"
+                android:fontFamily="@font/spartan_regular"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/password"
+                />
+
+            <EditText
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:inputType="textPassword"
+                android:textColor="@color/primtext"
+                android:fontFamily="@font/spartan_regular"
+                />
+
+        </LinearLayout>
+
+         <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/password"
+                />
+
+        <EditText
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/signup_cnfpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:inputType="textPassword"
+            android:textColor="@color/primtext"
+            android:fontFamily="@font/spartan_regular"
+            />
+
+         </LinearLayout>
+
+        <TextView
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Sign Up"
+            android:background="@drawable/signin_shape"
+            android:fontFamily="@font/spartan_bold"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/primtext"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We are already friends then. "
+            android:fontFamily="@font/spartan_regular"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/sectext"
+            />
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/primtext"
+            android:textSize="@dimen/_18sdp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
