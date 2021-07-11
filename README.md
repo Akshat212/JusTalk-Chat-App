@@ -17,15 +17,15 @@ database rules are in Locked mode or Test mode.
 
 ## Splash Screen, Login, Registration
 
-<img src="images/splashScreen.jpeg" width=300> <img src="images/login.jpeg" width=300> <img src="images/registration.jpeg" width=270>
+<img src="images/splashScreen.jpeg" width=300>    <img src="images/login.jpeg" width=300>    <img src="images/registration.jpeg" width=270>
 
 ## User List, Chats, Logout Dialog
 
-<img src="images/chat_list.jpeg" width=270> <img src="images/chat.jpeg" width=270> <img src="images/logout_dialog.jpeg" width=300>
+<img src="images/chat_list.jpeg" width=270>    <img src="images/chat.jpeg" width=270>    <img src="images/logout_dialog.jpeg" width=300>
 
 ## Settings
 
-<img src="images/bio.jpeg" width=300> <img src="images/setting.jpeg" width=270>
+<img src="images/bio.jpeg" width=300>    <img src="images/setting.jpeg" width=270>
 
 ## Contributing
 
